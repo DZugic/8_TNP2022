@@ -133,14 +133,13 @@ d &e&f\\ \hline
 
 
 
-
 \documentclass[11pt]{article}
 \usepackage[english,serbian]{babel}
 \usepackage{graphicx}
 \usepackage{epsfig}
 \begin{document}
 \section{Uvod}
-
+\label{sec:uvod}
     Zvuk je vibracija koja se širi kroz vazduh (ili neku drugu sredinu) u vidu talasa. Čovek može čuje zvuk jačine od 16 do 20000 Hz (kao što se vidi na slici 1). Ispod ove granice je \textit{infrazvuk}, a iznad \textit{ultrazvuk}. Osnovne karakteristike zvuka su visina, boja i jačina.
     \begin {itemize}
         \item[-] \textit{Visina zvuka} određena je njegovom osnovnom frekvencijom (više tonove stvaraju talasi
@@ -157,22 +156,22 @@ d &e&f\\ \hline
     \end{itemize}
  
     \includegraphics[width=0.8\textwidth]{airpressure}
+    \ref{fig:airpressure}
   \begin{center}
   slika 1
   \end{center}
     \section{Počeci snimanja zvuka}
+    \label{sec:Počeci snimanja zvuka}
     \subsection {Analogni zapis zvuka}
     U početku je snimanje zvuka bilo analogno, odnosno, zapisivale su se vibracije koje ljudsko uho prepoznaje kao zvuk na neku vrstu medija. 
-    Prvi zvuk je snimljen uz pomoć fonoautografa sredinom 19. veka. Zatim, Emile Berliner je 1889. godine osmislio gramofon koji je mogao da reprodukuje zvuk gotovo 4 minuta. Edison je 1927. patentirao ploču
-    koja je mogla da snima 40 minuta zvučnog zapisa, ali se nije proslavio njom. Godine 1928. Fritz Pfleumer je izumeo magnetnu traku i ovaj način snimanja se koristio za vreme Drugog svetskog rata.Nakon toga se pojavila
+    Prvi zvuk je snimljen uz pomoć fonoautografa \cite{fonoautograf} sredinom 19. veka. Zatim, Emile Berliner je 1889. godine osmislio gramofon \cite{gramofon} koji je mogao da reprodukuje zvuk gotovo 4 minuta. Edison je 1927. patentirao ploču
+    koja je mogla da snima 40 minuta zvučnog zapisa, ali se nije proslavio njom. Godine 1928. Fritz Pfleumer je izumeo magnetnu traku \cite{magnetna traka} i ovaj način snimanja se koristio za vreme Drugog svetskog rata.Nakon toga se pojavila
     stereo magnetna traka koja se mogla koristiti u kućnoj upotrebi. Kompaktna traka i uređaj koji snima i reprodukuje zvuk sa kasete su se pojavili 1964. godine.Kompanija Sony je krajem 80-ih godina predstavila
     novi proizvod DAT (engl.\textit {digital audio tape} ).Ovaj proizvod je prihvaćen od strane raznih industrija jer je mnogo manji od svih prethodnih.
     \subsection {Digitalni zapis zvuka}
     Prvi pokušaj da se kompjuterske obrade zvuka koji je doveo do uspešne digitalne
     transformacije zvuka desio se početkom 1969. godine u Bel Laboratoriji (\textit {Bell
-    Labs}), gde je uspešno proizveden veštački, kompjuterski generisan zvuk. U to vreme su se proizvodili PCM procesori. Oni su pretvarali zvuk u digitalni zapis, pa je napravljen eksperimentalni laserski disk. Zatim, početkom 80-ih, pojavljuju se kompaktni diskovi nepristupačne cene, što se ubrzo menja. Patentirani su kompaktni diskovi (CD-RW) koji imaju mogućnost pisanja i brisanja podataka. Napokon, javlja se uređaj koji može da reprodukuje zapisani zvučni zapis - MP3.
-
-\end{document}
+    Labs}), gde je uspešno proizveden veštački, kompjuterski generisan zvuk. U to vreme su se proizvodili PCM \cite{pcm} procesori. Oni su pretvarali zvuk u digitalni zapis, pa je napravljen eksperimentalni laserski disk. Zatim, početkom 80-ih, pojavljuju se kompaktni diskovi nepristupačne cene, što se ubrzo menja. Patentirani su kompaktni diskovi (CD-RW) \cite{cd-rw} koji imaju mogućnost pisanja i brisanja podataka. Napokon, javlja se uređaj koji može da reprodukuje zapisani zvučni zapis - MP3.
 
 \section{Drugi naslov}
 \label{sec:naslov2}
@@ -264,6 +263,26 @@ Ovde pišem zaključak.
 \bibitem{gcc} Free Software Foundation. GNU gcc, 2013. on-line at: http://gcc. gnu.org/.
 
 \bibitem{haltingproblem} A. M. Turing. \emph{On Computable Numbers, with an application to the Entscheidungsproblem}. Proceedings of the London Mathematical Society, 2(42):230–265, 1936.
+
+
+
+
+\bibitem{fonoautograf}Fonoautograf. Dostupno na adresi https://griffonagedotcom.wordpress.com/2016/05/25/the-first-phonautograph-in-america-1859/ .
+
+\bibitem{gramofon}Gramofon. Dostupno na adresi https://ia800708.us.archive.org/view_archive.php?archive=/22/items/crossref-pre-1909-scholarly-works/10.1109%252Fpaiee.1909.6660362.zip&file=10.1109%252Ft-aiee.1891.5570135.pdf .
+
+\bibitem{magnetna traka}Magnetne trake. Dostupno na adresi https://www.aes.org/images/e-lib/thumbnails/5/1/5136_full.png .
+\bibitem{pcm}PCM. Dostupno na adresi https://www.aes.org/e-lib/browse.cfm?elib=12991 .
+
+\bibitem{cd-rw}CD-RW. Dostupno na adresi https://www.mdpi.com/1424-8220/18/7/2070/html .
+
+
+\bibitem{}http://www.sveti-sava.edu.rs/otpremljeno/Digitalizacija1.pdf
+
+\bibitem{}https://repozitorij.ffzg.unizg.hr/islandora/object/ffzg%3A4007/datastream/PDF/view
+
+
+
 
 
 \end{thebibliography}
