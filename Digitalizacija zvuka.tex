@@ -15,11 +15,19 @@ Da bi se zvuk iz analognog preveo u digitalni oblik potrebno je izvršiti \texti
 \subsection{Odabiranje ili uzorkovanje, semplovanje (engl. \textit{sampling})}
 Uzorkovanje je postupak kojim se uzima vrednost električnog napona signala u određenim trenucima vremena. Što je kvalitet signala bolji, informacija će biti bolje digitalizovana, što znači što je uzorkovanje veće, kvalitetniji će biti dobijeni zvuk. Frekvencija uzorkovanja treba da bude najmanje dva puta veća od najveće frekvencije analognog signala (Nikvist-Šenonova teorema odabiranja). Standardna frekvencija uzorkovanja je 44,1kHz, a može ići i do 192kHz. Opšte prihvaćen CD audio standard je 44.1kHz, DAT kasete (eng. \textit{Digital Audio Tape}) koriste frekvenciju od 48kHz, a zvukovi u igricama 11 ili 22kHz. Može se uzorkovati i na manjim frekvencijama, ali tada će se desiti gubici (na pr. na uzorkovanju od 1kHz dobijeni zvuk će biti neprepoznatljiv). Međutim, što je frekvencija uzorkovanja veća, to je veći i zapis, tj. zauzima više mesta kod čuvanja.
 
-\begin{figure}[!h]
+\begin{figure}[h]
     \centering
-    \includegraphics[width=5cm]{Uzorkovanje1}
-    \includegraphics[width=5cm]{Uzorkovanje2}
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Uzorkovanje1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{Uzorkovanje2}
+    \end{subfigure}
     \caption{Uzorkovanje na 44,1kHz i na 1kHz}
+    \label{fig:slika1}
 \end{figure}
 
 \subsection{Kvantizacija}
