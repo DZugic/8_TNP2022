@@ -37,7 +37,7 @@ Cilj ovog seminarskograda je da na jedan pregledan i koncizan način predstavi o
 
 \section{Zvuk}
 
-    Zvuk je vibracija koja se širi kroz vazduh (ili neku drugu sredinu) u vidu talasa. Čovek može da čuje zvuk jačine od 16 do 20000 Hz. Ispod ove granice je \textit{infrazvuk}, a iznad \textit{ultrazvuk}. Osnovne karakteristike zvuka su visina, boja i jačina:
+    Zvuk je vibracija koja se širi kroz vazduh (ili neku drugu sredinu) u vidu talasa. Čovek može da čuje zvuk jačine od 16 do 20000 Hz. Ispod ove granice je \textit{infrazvuk}, a iznad \textit{ultrazvuk} (slika~\ref{fig:slika1}). Osnovne karakteristike zvuka su visina, boja i jačina:
     \begin {itemize}
         \item[-] \textit{Visina zvuka} određena je njegovom osnovnom frekvencijom (više tonove stvaraju talasi
         veće frekvencije i obrnuto).
@@ -51,29 +51,39 @@ Cilj ovog seminarskograda je da na jedan pregledan i koncizan način predstavi o
         vremena kroz jediničnu površinu koja je normalna na pravac prostiranja talasa. Izražava se
         u vatima po kvadratnom metru.
     \end{itemize}
- 
-    \includegraphics[width=0.8\textwidth]{airpressure}
   
-
+  \begin{figure}[h]
+        \centering
+        
+        \begin{subfigure}[t]{0.49\textwidth}
+            \centering
+            \includegraphics[width=1\textwidth]{airpressure}
+        \end{subfigure}
+        \caption{Zavisnost vazdušnog pritiska od vremena}
+        \label{fig:slika1}
+    \end{figure}
+  
     \section{Počeci snimanja zvuka}
+    Kroz istoriju bilo je mnogo pokušaja da se zvuk snimi, pa da se metode koje su uspele unaprede. Tako smo od analognog snimanja zvuka stigli do digitalnog koji je daleko napredniji. 
+    
     \subsection {Analogni zapis zvuka}
     U početku je snimanje zvuka bilo analogno, odnosno, zapisivale su se vibracije koje ljudsko uho prepoznaje kao zvuk na neku vrstu medija. 
     Prvi zvuk je snimljen uz pomoć fonoautografa sredinom 19. veka. Zatim, Emile Berliner je 1889. godine osmislio gramofon koji je mogao da reprodukuje zvuk gotovo 4 minuta. Edison je 1927. patentirao ploču
     koja je mogla da snima 40 minuta zvučnog zapisa, ali se nije proslavio njom. Godine 1928. Fritz Pfleumer je izumeo magnetnu traku i ovaj način snimanja se koristio za vreme Drugog svetskog rata.Nakon toga se pojavila
-    stereo magnetna traka koja se mogla koristiti u kućnoj upotrebi. Kompaktna traka i uređaj koji snima i reprodukuje zvuk sa kasete su se pojavili 1964. godine.Kompanija Sony je krajem 80-ih godina predstavila
-    novi proizvod DAT (engl.\textit {digital audio tape} ).Ovaj proizvod je prihvaćen od strane raznih industrija jer je mnogo manji od svih prethodnih.
+    stereo magnetna traka koja se mogla koristiti u kućnoj upotrebi. Kompaktna traka i uređaj koji snima i reprodukuje zvuk sa kasete su se pojavili 1964. godine. Kompanija Sony je krajem 80-ih godina predstavila
+    novi proizvod DAT (engl.\textit {digital audio tape} ). Ovaj proizvod je prihvaćen od strane raznih industrija jer je mnogo manji od svih prethodnih.
     \subsection {Digitalni zapis zvuka}
-    Prvi pokušaj da se kompjuterske obrade zvuka koji je doveo do uspešne digitalne
+    Prvi pokušaj računarske obrade zvuka koji je doveo do uspešne digitalne
     transformacije zvuka desio se početkom 1969. godine u Bel Laboratoriji (\textit {Bell
-    Labs}), gde je uspešno proizveden veštački, kompjuterski generisan zvuk. U to vreme su se proizvodili PCM procesori. Oni su pretvarali zvuk u digitalni zapis, pa je napravljen eksperimentalni laserski disk. Zatim, početkom 80-ih, pojavljuju se kompaktni diskovi nepristupačne cene, što se ubrzo menja. Patentirani su kompaktni diskovi (CD-RW) koji imaju mogućnost pisanja i brisanja podataka. Napokon, javlja se uređaj koji može da reprodukuje zapisani zvučni zapis - MP3.
+    Labs}), gde je uspešno proizveden veštački, računarski generisan zvuk. U to vreme su se proizvodili PCM procesori. Oni su pretvarali zvuk u digitalni zapis, pa je napravljen eksperimentalni laserski disk. Zatim, početkom 80-ih, pojavljuju se kompaktni diskovi nepristupačne cene, što se ubrzo menja. Patentirani su kompaktni diskovi (CD-RW) koji imaju mogućnost pisanja i brisanja podataka. Napokon, javlja se uređaj koji može da reprodukuje zapisani zvučni zapis - MP3.
 
     \section{Digitalizacija zvuka}
-    Za razliku od analognog zvuka koji je neprekidni signal u vremenu, digitalni zvuk je isprekidan i postoji samo u određenim trenucima vremena. Digitalizacija se najviše koristi jer su informacije na analognim nosačima zvuka sklone oštećenju reprodukcijom. Za digitalizaciju je potreban računar sa zvučnom karticom i programom za obradu zvuka, zatim uređaji za reprodukciju koji se digitalizuju (gramofon, kasetofon itd.) Radi boljeg kvaliteta dobro je koristiti i dodatnu opremu kao miksetu i pretpojačalo.\cite{jurkovic2021digitalizacija} Digitalizovani zvuk se otprema u jednom od formata: MP3, WAV, AIFF, AAC, OGG i dr.
+    Za razliku od analognog zvuka koji je neprekidni signal u vremenu, digitalni zvuk je isprekidan i postoji samo u određenim trenucima vremena. Digitalizacija se najviše koristi jer su informacije na analognim nosačima zvuka sklone oštećenju reprodukcijom. Za digitalizaciju je potreban računar sa zvučnom karticom i programom za obradu zvuka, zatim uređaji za reprodukciju koji se digitalizuju (gramofon, kasetofon itd.) Radi boljeg kvaliteta dobro je koristiti i dodatnu opremu kao miksetu i pretpojačalo\cite{jurkovic2021digitalizacija}. Digitalizovani zvuk se otprema u jednom od formata: MP3, WAV, AIFF, AAC, OGG i dr.
     
     Da bi se zvuk iz analognog preveo u digitalni oblik potrebno je izvršiti \textit{uzorkovanje}, \textit{kvantizaciju} i \textit{kodiranje}.
     
     \subsection{Odabiranje ili uzorkovanje, semplovanje (engl. \textit{sampling})}
-    Uzorkovanje je postupak kojim se uzima vrednost električnog napona signala u određenim trenucima vremena. Što je kvalitet signala bolji, informacija će biti bolje digitalizovana, što znači što je uzorkovanje veće, kvalitetniji će biti dobijeni zvuk. Frekvencija uzorkovanja treba da bude najmanje dva puta veća od najveće frekvencije analognog signala (Nikvist-Šenonova teorema odabiranja). Standardna frekvencija uzorkovanja je 44,1kHz, a može ići i do 192kHz. Opšte prihvaćen CD audio standard je 44.1kHz, DAT kasete (eng. \textit{Digital Audio Tape}) koriste frekvenciju od 48kHz, a zvukovi u igricama 11 ili 22kHz. Može se uzorkovati i na manjim frekvencijama, ali tada će se desiti gubici (na pr. na uzorkovanju od 1kHz dobijeni zvuk će biti neprepoznatljiv - slika~\ref{fig:slika1}). Međutim, što je frekvencija uzorkovanja veća, to je veći i zapis, tj. zauzima više mesta kod čuvanja.\cite{jurkovic2021digitalizacija}
+    Uzorkovanje je postupak kojim se uzima vrednost električnog napona signala u određenim trenucima vremena. Što je kvalitet signala bolji, informacija će biti bolje digitalizovana, što znači što je uzorkovanje veće, kvalitetniji će biti dobijeni zvuk. Frekvencija uzorkovanja treba da bude najmanje dva puta veća od najveće frekvencije analognog signala (Nikvist-Šenonova teorema odabiranja). Standardna frekvencija uzorkovanja je 44,1kHz, a može ići i do 192kHz. Opšte prihvaćen CD audio standard je 44.1kHz, DAT kasete (eng. \textit{Digital Audio Tape}) koriste frekvenciju od 48kHz, a zvukovi u igricama 11 ili 22kHz. Može se uzorkovati i na manjim frekvencijama, ali tada će se desiti gubici (na pr. na uzorkovanju od 1kHz dobijeni zvuk će biti neprepoznatljiv - slika~\ref{fig:slika2}). Međutim, što je frekvencija uzorkovanja veća, to je veći i zapis, tj. zauzima više mesta kod čuvanja\cite{jurkovic2021digitalizacija}.
     
     \begin{figure}[h]
         \centering
@@ -87,12 +97,12 @@ Cilj ovog seminarskograda je da na jedan pregledan i koncizan način predstavi o
             \includegraphics[width=1\textwidth]{Uzorkovanje2}
         \end{subfigure}
         \caption{Uzorkovanje na 44,1kHz i na 1kHz}
-        \label{fig:slika1}
+        \label{fig:slika2}
     \end{figure}
     
     
     \subsection{Kvantizacija}
-    Posle semplovanja ide kvantizacija što je postupak kojim se odabrane vrednosti električnog napona zaokružuju na najbližu od dozvoljenih vrednosti. Pošto jedna sekunda zvučnog zapisa može da se podeli na 44 100 delova (frekvencija uzorkovanja), svaki deo ima amplitudu koja nosi informaciju o zvuku, a ta informacija se prenosi u digitalni oblik, bit. Dubina bita se prikazuje formulom: 2x = n, gde je x broj bitova, a n broj mogućih kombinacija. Kvalitet zvuka direktno proporcionalno zavisi od broja bitova. Za digitalizaciju je standardan 16-bitni prikaz. Tokom kvantizacije neophodno dolazi do kvantizacijske greške (eng. \textit{quantization error}) koja uzrokuje šum u zapisu jer neminovno dolazi do gubitka informacije. Međutim, taj šum se obično ne primećuje.\cite{10.17632/rwbs7645hg.2}
+    Posle semplovanja ide kvantizacija što je postupak kojim se odabrane vrednosti električnog napona zaokružuju na najbližu od dozvoljenih vrednosti. Pošto jedna sekunda zvučnog zapisa može da se podeli na 44 100 delova (frekvencija uzorkovanja), svaki deo ima amplitudu koja nosi informaciju o zvuku, a ta informacija se prenosi u digitalni oblik, bit. Dubina bita se prikazuje formulom: 2x = n, gde je x broj bitova, a n broj mogućih kombinacija. Kvalitet zvuka direktno proporcionalno zavisi od broja bitova. Za digitalizaciju je standardan 16-bitni prikaz. Tokom kvantizacije neophodno dolazi do kvantizacijske greške (eng. \textit{quantization error}) koja uzrokuje šum u zapisu jer neminovno dolazi do gubitka informacije. Međutim, taj šum se obično ne primećuje\cite{10.17632/rwbs7645hg.2}.
     
     \subsection{Kodiranje}
     Kodiranje (eng. \textit{Encoding}) je niz znakova u digitalnom formatu koji se koriste za prenos i skladištenje. To je i proces pretvaranja podataka u neki drugi format i često se koristi za redukciju veličine audio datoteke. Pri kodiranju svaka vrednost se predstavlja logičkim nulama i jedinicama, tj. bitovima. Broj bitova (8, 16, 24...) određuje dinamički raspon jačine zvuka, što se izražava u decibelima\cite{10.17632/rwbs7645hg.1}. U digitalizaciji (prevođenju analognog u digitalni signal), kao što smo rekli, frekvencija uzorkovanja mora da bude najmanje dva puta veća od najveće frekvencije analognog signala i, zavisno od broja bitova, interval je podeljen na 2n nivoa, te se digitalni signal sastoji od blokova n bitova. Metode kodiranja koje se ovde koriste su:
@@ -115,7 +125,7 @@ Za razliku od diskova, magnetne trake nemaju brz pristup podacima te se sve manj
 
     \section{Kompresija i formati audio zapisa}
     MP3 format jedan je od najpoznatijih formata, a ostali poznatiji su WAV, AIFF, AAC,
-    OGG i dr. MP3 format dolazi sa odredjenim gubicima i to je njegova najveća mana ali u isto vreme ima tu prednost manje veličine. Veličina zapisa bude gotovo 1/10 od nekompresovanog zapisa, kao sto su WAV ili AIFF formati koji ne zrtvuju nikoju količinu informacija zarad kompresije. Kvalitet
+    OGG i dr. MP3 format dolazi sa određenim gubicima i to je njegova najveća mana ali u isto vreme ima tu prednost manje veličine. Veličina zapisa bude gotovo 1/10 od nekompresovanog zapisa, kao sto su WAV ili AIFF formati koji ne zrtvuju nikoju količinu informacija zarad kompresije. Kvalitet
     MP3 formata zavisi od broja bitova koji će se koristiti, što je veći broj bitova, to je bolji zapis,
     bolji kvalitet. Nasuprot tome, postoje nekompresovani WAV i AIFF formati. To je WAV
     standardni format za snimanje zvučnih zapisa. Koriste se standardne i minimalne
@@ -163,7 +173,7 @@ digitalizacijom zaštititi izvorno gradivo ili omogućiti pristup gradivu. S obz
 jednostavnije pristupiti kroz deljenje sadržaja institucije preko interneta s mnogobrojnim korisnicima istovremeno. Korisnici očekuju aktivno vođenje stranica ustanova i društvenih
 mreža kako bi mogli da preslušaju određeni zvučni sadržaj bez fizičkog dolaska u ustanovu.
  
-Ustanove digitalizuju svoje gradivo iz sledećih razloga:
+Ustanove digitalizuju svoju građu iz sledećih razloga:
 
 \begin{itemize}
   \item kao plaćenu uslugu,
@@ -178,9 +188,9 @@ Ustanove digitalizuju svoje gradivo iz sledećih razloga:
 \label{sec:naslovM}
 
 Digitalizacija se danas koristi sve više. Postaje skoro nepojmljivo da određena prodavnica nema bar internet stranicu, dok je to obavezni minimum koji se očekuje od većih kompanija i državnih institucija. Od elektronskih dnevnika, elektronskog bankarstva, društvenih mreža pa sve do muzočkih biblioteka sa milionima pesama, posledice digitalizacije vidimo na svakom koraku. 
-Digitalizacija se koristi sve više. Postaje skoro nepojmljivo da određena prodavnica nema bar internet stranicu, dok je to obavezni minimum koji se očekuje od većih kompanija i državnih institucija. Od elektronskih dnevnika, elektronskog bankarstva, društvenih mreža pa sve do muzočkih biblioteka sa milionima pesama, posledice digitalizacije vidimo na svakom koraku. 
+Digitalizacija se koristi sve više. Postaje skoro nepojmljivo da određena prodavnica nema bar internet stranicu, dok je to obavezni minimum koji se očekuje od većih kompanija i državnih institucija. Od elektronskih dnevnika, elektronskog bankarstva, društvenih mreža pa sve do muzičkih biblioteka sa milionima pesama, posledice digitalizacije vidimo na svakom koraku. 
 
-Pre digitalizacije, mnogi podaci, informacije, sadržaji su bili znatno skuplji, teže pristupačni, ograničenog broja i upotrebe. Ako bismo hteli da odslušamo novi album odrešenog izvošača, računar ili telefon je sve što nam je potrebno. Za veliki broj slučajeva, ne bismo morali da platimo, ne bismo imali uslov koliko puta smemo i koliko nas sme da sluša taj sadržaj. 
+Pre digitalizacije, mnogi podaci, informacije, sadržaji su bili znatno skuplji, teže pristupačni, ograničenog broja i upotrebe. Ako bismo hteli da odslušamo novi album određenog izvođača, računar ili telefon je sve što nam je potrebno. Za veliki broj slučajeva, ne bismo morali da platimo, ne bismo imali uslov koliko puta smemo i koliko nas sme da sluša taj sadržaj. 
  
 Vrlo bitan aspekt digitalizacije je katalogizacija. Zahvaljujući pravilnom arhiviranju i indeksiranju, imamo jasniji pregled i razumevanje sadržaja koje nam štedi vreme pri potrazi za odredjenim podacima, tokom obrade i rukovođenjem.
 \section{Zaključak}
