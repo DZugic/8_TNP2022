@@ -1,1 +1,96 @@
+\documentclass{beamer}
+\usepackage{beamerthemeshadow}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[flushleft]{threeparttable}
+\definecolor{beamer@darkred}{rgb}{0.85,0.1,0.1}
+\setbeamercolor{structure}{fg=beamer@darkred}
 
+\def\d{{\fontencoding{T1}\selectfont\dj}}
+\def\D{{\fontencoding{T1}\selectfont\DJ}}
+
+
+\title{Tehničko i naučno pisanje}
+\subtitle{-- Digitalizacija zvuka --}
+\author{Nina Ostojić, Maksim Krstović, Mihailo Radulović, Dušan Žugić}
+\institute{Matematički fakultet\\Univerzitet u Beogradu}
+\date{
+	\footnotesize{Beograd, 2022.}	
+}
+
+\begin{document}
+\begin{frame}
+	\thispagestyle{empty}
+	\titlepage
+\end{frame}
+
+\addtocounter{framenumber}{-1}
+
+\begin{frame}[fragile]\frametitle{Literatura}
+	\begin{itemize}
+		\item Zasnovano na:\\
+		Goran Nenadic, Predrag Janičić, Aleksandar Samardžić: \LaTeX{} za autore, Beograd, Kompjuter biblioteka, 2003.
+		(\url{http://poincare.matf.bg.ac.rs/~janicic//latex2e/})
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Sadržaj} 
+	\tableofcontents[hidesubsections] 
+\end{frame}
+
+\section{Zvuk}
+
+\begin{frame}[fragile]\frametitle{Šta je zapravo zvuk?}
+	\begin{itemize}	
+ 
+		\item Zvuk je vibracija koja se širi kroz vazduh ili neku drugu sredinu u vidu talasa.
+            \item Čovek može čuje zvuk jačine od 16 do 20000 Hz.
+		\item Osnovne karakteristike zvuka su: \textbf{visina}, \textbf{boja} i \textbf{jačina}.
+	
+	\end{itemize}
+\end{frame}
+
+
+\section{Načini zapisa zvuka}
+\subsection{Analognizapis zvuka}
+\begin{frame}[fragile]\frametitle{Kako je sve počelo?}
+	\begin{itemize}	
+		\item Snimanje zvuka je počelo tako što su se zapisivale vibracije koje ljudsko uho registruje kao zvuk na neku vrstu medija.
+		\item Fonoautograf
+		\item Magnetna traka
+            \item Kompaktna traka
+	\end{itemize}
+\end{frame}
+\subsection{Digitalni zapis zvuka}
+\begin{frame}[fragile]\frametitle{Počeci digitalizacije}
+	\begin{itemize}	
+		\item Početkom 1969. godine prvi put je uspešno realizovana računarska obrada zvuka koja je dovela do njegove digitalne transformacije.
+		\item PCM procesori
+		\item Kompaktni diskovi
+            \item CD-RW
+            \item MP3
+	\end{itemize}
+\end{frame}
+
+\section{Zakljucak}
+
+\begin{frame}[fragile]\frametitle{Kako ljudi uče?}
+	\begin{itemize}	
+		\item Ljudi ne komuniciraju samo rečima. Prema nekim
+		istraživanjima:
+		\begin{itemize}
+			\item samo 8\% poruke se prenese samim rečima (verbalna komunikacija)
+			\item 37\% se prenesi bojom glasa, tonalitetom, pauzama u govoru (paralingvističkim znakovima)
+			\item 55\% poruke se prenosi govorom tela: pratećim pokretima, izrazom lica i
+			očiju, stavom tela i drugo (neverbalna komunikacija)
+		\end{itemize}
+		\item Verbalnim putem se najčešće prenose činjenice i
+		sirove informacije, dok se neverbalnim putem prenose stavovi i
+		emocionalni odnos prema činjenicama koje izlažemo.
+	\end{itemize}
+\end{frame}
+
+\end{document}
