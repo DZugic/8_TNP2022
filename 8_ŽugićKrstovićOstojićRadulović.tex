@@ -24,7 +24,7 @@
 
 \title{Digitalni zvuk\\ \small{Seminarski rad u okviru kursa\\Tehničko i naučno pisanje\\ Matematički fakultet}}
 
-\author{Nina Ostojić, Maksim Krstović, Mihailo Radulović, Dušan Žugić}
+\author{Nina Ostojić, Maksim Krstović, Mihailo Radulović, Dušan Žugić\\ostojic.nina99@gmail.com, maksimusminimus@gmail.com\\ mihailo.radulovic03@gmail.com, dusan.zugic@outlook.com}
 \date{15.~novembar 2022.}
 \maketitle
 
@@ -49,7 +49,7 @@ Cilj ovog seminarskograda je da na jedan pregledan i koncizan način predstavi o
     
         \item[-] \textit{Jačina zvuka} (I) određena je količinom energije koju zvučni talas prenese u jedinici
         vremena kroz jediničnu površinu koja je normalna na pravac prostiranja talasa. Izražava se
-        u vatima po kvadratnom metru.
+        u vatima po kvadratnom metru\cite{10.17632/rwbs7645hg.n}.
     \end{itemize}
   
   \begin{figure}[h]
@@ -108,7 +108,7 @@ Cilj ovog seminarskograda je da na jedan pregledan i koncizan način predstavi o
     Kodiranje (eng. \textit{Encoding}) je niz znakova u digitalnom formatu koji se koriste za prenos i skladištenje. To je i proces pretvaranja podataka u neki drugi format i često se koristi za redukciju veličine audio datoteke. Pri kodiranju svaka vrednost se predstavlja logičkim nulama i jedinicama, tj. bitovima. Broj bitova (8, 16, 24...) određuje dinamički raspon jačine zvuka, što se izražava u decibelima\cite{10.17632/rwbs7645hg.1}. U digitalizaciji (prevođenju analognog u digitalni signal), kao što smo rekli, frekvencija uzorkovanja mora da bude najmanje dva puta veća od najveće frekvencije analognog signala i, zavisno od broja bitova, interval je podeljen na 2n nivoa, te se digitalni signal sastoji od blokova n bitova. Metode kodiranja koje se ovde koriste su:
     \begin{itemize}
         \item \textit{Pulsna kod modulacija} (eng. \textit{Pulse code modulation, PCM}) – intervali su jednako raspoređeni
-        \item \textit{Delta modulacija} (eng. \textit{Delta modulation, DM}) – uzorci se ne razlikuju mnogog i potrebno je manje bitova nego kod PCM
+        \item \textit{Delta modulacija} (eng. \textit{Delta modulation, DM}) – uzorci se ne razlikuju mnogog i potrebno je manje bitova nego kod PCM\cite{10.17632/rwbs7645hg.3}
     \end{itemize}
     Digitalizacija se obavlja u analogno-digitalnom pretvaraču (eng. \textit{A/D converter}). Bitska brzina (eng. \textit{bit rate}) je broj bitova obrađenih u jedinici vremena, tj, u ovom slučaju, koliko je kilobita u sekundi potrebno za smeštanje zvuka (kpbs – eng. \textit{kilobit per second}).
     
@@ -216,15 +216,17 @@ Analogni izvornici ili izvorno digitalno gradivo će uvek imati svoju vrednost u
 
 \begin{thebibliography}{9}
 
+\bibitem{10.17632/rwbs7645hg.n} Fizika 4, udžbenik za 4. razred gimnazije, Nataša Čaluković, Krug Beograd   
+
 \bibitem{jurkovic2021digitalizacija} Jurković, Anamaria. Digitalizacija zvuka.  Završni rad, Sveučilište u Zagrebu, Filozofski fakultet, 2021.
 
-\bibitem{10.17632/rwbs7645hg.1} S. Filipović. Digitalizacija zvuka. Računari i programiranje, Wordpress, 2014. on-line at:
+\bibitem{10.17632/rwbs7645hg.1} S. Filipović. Digitalizacija zvuka. Računari i programiranje, Wordpress, 2014. on-line at: https://racunariprogramiranje.wordpress.com/2014/02/08/дигитализација-звука/
 
-\bibitem{10.17632/rwbs7645hg.2} Wordpress. Digital Sound and Music. on-line at:
+\bibitem{10.17632/rwbs7645hg.2} Wordpress. Digital Sound and Music. on-line at: http://digitalsoundandmusic.com/5-1-2-digitization/
 
-\bibitem{} Dr. Dheeraj Sanghi. Data Encoding. Computer Networks, Computer Science and Engineering, IIT Kanpur. on-line at:
+\bibitem{10.17632/rwbs7645hg.3} Dr. Dheeraj Sanghi. Data Encoding. Computer Networks, Computer Science and Engineering, IIT Kanpur. on-line at: https://www.cse.iitk.ac.in/users/dheeraj/cs425/lec03.html
 
-\bibitem{} S. Filipović. Компресија аудио записа и формати аудио записа. Računari i programiranje, Wordpress, 2014. on-line at:
+\bibitem{10.17632/rwbs7645hg.4} S. Filipović. Компресија аудио записа и формати аудио записа. Računari i programiranje, Wordpress, 2014. on-line at: https://racunariprogramiranje.wordpress.com/2013/02/10/компресија-аудио-записа-и-формати-ауд/
 
 \end{thebibliography}
 
