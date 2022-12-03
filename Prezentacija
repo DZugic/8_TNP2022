@@ -31,10 +31,13 @@
 \addtocounter{framenumber}{-1}
 
 \begin{frame}[fragile]\frametitle{Literatura}
+	Zasnovano na:
 	\begin{itemize}
-		\item Zasnovano na:\\
-		Goran Nenadic, Predrag Janičić, Aleksandar Samardžić: \LaTeX{} za autore, Beograd, Kompjuter biblioteka, 2003.
-		(\url{http://poincare.matf.bg.ac.rs/~janicic//latex2e/})
+		\item Jurković, Anamaria. Digitalizacija zvuka. Završni rad, Sveučilište u Zagrebu, Filozofski fakultet, 2021.
+		\item S. Filipović. Digitalizacija zvuka. Računari i programiranje, Wordpress, 2014.
+		\item Wordpress. Digital Sound and Music. on-line at: \url{http://digitalsoundandmusic.com/5-1-2-digitization/}
+		\item Dr. Dheeraj Sanghi. Data Encoding. Computer Networks, Computer Science and Engineering, IIT Kanpur. on-line at: \url{https://www.cse.iitk.ac.in/users/dheeraj/cs425/lec03.html}
+		\item Fizika 4, udžbenik za 4. razred gimnazije, Nataša Čaluković, Krug, Beograd
 	\end{itemize}
 \end{frame}
 
@@ -43,56 +46,107 @@
 	\tableofcontents[hidesubsections] 
 \end{frame}
 
-\section{Zvuk}
-
+\section{Uvod}
+\subsection{Definicija zvuka}
 \begin{frame}[fragile]\frametitle{Šta je zapravo zvuk?}
 	\begin{itemize}	
  
 		\item Zvuk je vibracija koja se širi kroz vazduh ili neku drugu sredinu u vidu talasa.
-            \item Čovek može čuje zvuk jačine od 16 do 20000 Hz.
-		\item Osnovne karakteristike zvuka su: \textbf{visina}, \textbf{boja} i \textbf{jačina}.
-	
+        \item Čovek može čuje zvuk jačine od 16 do 20000 Hz.
+		\item Osnovne karakteristike zvuka su: 
+		\begin{itemize}
+			\item \textbf{visina}, 
+			\item \textbf{boja}, 
+			\item \textbf{jačina}.
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
-
-\section{Načini zapisa zvuka}
-\subsection{Analognizapis zvuka}
+\subsection{Kratki istorijat zapisa zvuka}
 \begin{frame}[fragile]\frametitle{Kako je sve počelo?}
 	\begin{itemize}	
 		\item Snimanje zvuka je počelo tako što su se zapisivale vibracije koje ljudsko uho registruje kao zvuk na neku vrstu medija.
 		\item Fonoautograf
 		\item Magnetna traka
-            \item Kompaktna traka
-	\end{itemize}
-\end{frame}
-\subsection{Digitalni zapis zvuka}
-\begin{frame}[fragile]\frametitle{Počeci digitalizacije}
-	\begin{itemize}	
+        \item Kompaktna traka
 		\item Početkom 1969. godine prvi put je uspešno realizovana računarska obrada zvuka koja je dovela do njegove digitalne transformacije.
 		\item PCM procesori
-		\item Kompaktni diskovi
-            \item CD-RW
-            \item MP3
+		\item Kompaktni diskovi, CD-RW
+		\item MP3
+	\end{itemize}
+\end{frame}
+
+\section{Digitalizacija zvuka}
+\subsection{Uzorkovanje}
+\begin{frame}[fragile]\frametitle{Šta je digitalizacija?}
+\begin{itemize}
+	\item \textbf{Digitalizacija} je prevodenje analognog zvučnog signala u digitalni. Da bi se zvuk iz analognog preveo u digitalni oblik potrebno je izvršiti:
+    \begin{itemize}			
+		\item \textit{uzorkovanje ili odabiranje} (eng. \textit{sampling})
+		\item \textit{kvantizaciju}
+        \item \textit{kodiranje}
+    \end{itemize}
+	\item \textbf{Uzorkovanje} je postupak kojim se uzima vrednost električnog napona signala u odredenim trenucima vremena.
+	\item Frekvencija uzorkovanja treba da bude najmanje dva puta veća od najveće frekvencije analognog signala (Nikvist-Šenonova teorema odabiranja).
+	\item Standardna frekvencija uzorkovanja je 44,1kHz (CD audio standard), a može ići i do 192kHz. 
+\end{itemize}
+
+\end{frame}
+
+\subsection{Kvantizacija i kodiranje}
+\begin{frame}[fragile]\frametitle{Kvantizacija i kodiranje}
+	\begin{itemize}	
+		\item \textbf{Kvantizacija} što je postupak kojim se odabrane vrednosti električnog napona zaokružuju na najbližu od dozvoljenih vrednosti.
+		\item Dubina bita se prikazuje formulom: 2x = n, gde je x broj bitova, a n broj mogućih kombinacija.
+		\item Kvantizacijska greška (eng. \textit{quantization error})
+		\item \textbf{Kodiranje} (eng. Encoding) je proces pretvaranja podataka u neki drugi format pri kojem se vrednosti predstavljaju logičkim nulama i jedinicama, tj. bitovima. 
+		\item \textit{Pulsna kod modulacija} (PCM) i \textit{Delta modulacija} (DM)
+		\item \textit{bit rate}
+	\end{itemize}
+\end{frame}
+
+\section{Kompresija i zaštitita}
+\subsection{Čuvanje digitalnog zvuka}
+\begin{frame}[fragile]\frametitle{Kompresija i čuvanje digitalnih podataka}
+\begin{itemize}
+  \item Za \textbf{čuvanje} je bitno odrediti koji se kvalitet medijuma traži: kapacitet, dugovečnost, pouzdanost, način rukovanja i naravno, cena kao i dostupnost. Uglavnom se koriste:
+    \begin{itemize}
+	 \item \textit{izmenjivi diskovi}
+	 \item \textit{tvrdi diskovi}
+	 \item \textit{magnetne trake}
+    \end{itemize}
+  \item \textbf{Kompresija} audio podataka ima potencijal da smanji propusni opseg prenosa i zahteve za skladištenje audio podataka.
+  \item MP3 format jedan je od najpoznatijih formata. Kvalitet MP3 formata zavisi od broja bitova
+  \item Nekompresovani WAV i AIFF formati. Ostali poznatiji su AAC, OGG i dr.
+\end{itemize}
+\end{frame}
+
+\section{Ciljevi i dobrobiti digitalizacije}
+\subsection{Zaštitita digitalizovanog materijala}
+\begin{frame}[fragile]\frametitle{Zašto digitalizovati?}
+	\begin{itemize}	
+		\item Digitalizovani materijal treba zaštititi od neovlašćenog pristupa, kopiranja i distribucije. Neki od metoda zaštite su: 
+		šifrovanje, digitalni potpisi, digitalni sertifikati, vodeni žigovi, šifrovane koverte itd 
+		\item Ustanove digitalizuju svoju gradu iz više razloga:\\
+		zbog lakšeg i dugotrajnog čuvanja, kako bi dodale novi sadržaj u već postojeću zbirku, vezano za administrativne procese, zbog izrade internet stranica, radi konzervacije i restauracije, zbog ulaganja u nove tehnologije.
+		\item Elektronsko bankarstvo, elektronski dnevnici
+		\item Društvene mreže
+		\item Muzičke biblioteke i \textit{Streaming}
 	\end{itemize}
 \end{frame}
 
 \section{Zakljucak}
 
-\begin{frame}[fragile]\frametitle{Kako ljudi uče?}
+\begin{frame}[fragile]\frametitle{Da rezimiramo}
 	\begin{itemize}	
-		\item Ljudi ne komuniciraju samo rečima. Prema nekim
-		istraživanjima:
-		\begin{itemize}
-			\item samo 8\% poruke se prenese samim rečima (verbalna komunikacija)
-			\item 37\% se prenesi bojom glasa, tonalitetom, pauzama u govoru (paralingvističkim znakovima)
-			\item 55\% poruke se prenosi govorom tela: pratećim pokretima, izrazom lica i
-			očiju, stavom tela i drugo (neverbalna komunikacija)
-		\end{itemize}
-		\item Verbalnim putem se najčešće prenose činjenice i
-		sirove informacije, dok se neverbalnim putem prenose stavovi i
-		emocionalni odnos prema činjenicama koje izlažemo.
+		\item Potrebno je digitalizovati gradu, pogotovo kulturnu baštinu, kako se identitet i kultura ne bi zaboravili i kako bi ljudi  
+		digitalizovani materijal mogli da koriste i tokom celog života.
+		\item S obzirom na današnju tehnologiju, potrebno je i održavati gradu u odredenim formatima kako bi bili čitljivi i dostupni većem broju ljudi.
+		\item Analogni izvornici ili izvorni digitalni materijal će uvek imati svoju vrednost u pogledu informacija, pa i analogni zvuk, 
+		jer koliko god pogodnosti digitalni zvuk pružao, naročito u smislu dugotrajnosti i uštede prostora, 
+		postoji odredeni kvalitet 'živog' zvuka koji se neminovno gubi i koji je za sada nemoguće digitalno reprodukovati.
 	\end{itemize}
+	
 \end{frame}
 
 \end{document}
